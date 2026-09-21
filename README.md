@@ -7,6 +7,8 @@
 **华北水利水电大学 · 科研团队**
 North China University of Water Resources and Electric Power
 
+[**中文**](README.md) · [English](README.en.md)
+
 </div>
 
 ---
@@ -19,6 +21,9 @@ AstroGeo 团队视觉标识资源库。名称由 **Astro**（天体、星空、�
 
 ```
 AstroGeo-Logo/
+├── README.md               中文说明（本文件）
+├── README.en.md            English documentation
+├── LICENSE                 授权协议 CC BY-NC-ND 4.0
 ├── index.html              预览页（浏览器打开，含尺寸与深浅底效果对比）
 ├── 01-mark/                主标志
 │   ├── astrogeo-mark.svg             矢量源（可无损改色改字）
@@ -97,3 +102,17 @@ npm run build
 ## 启用在线预览
 
 仓库根目录的 `index.html` 可直接用 GitHub Pages 托管：Settings → Pages → Source 选 `main` 分支根目录，即可获得一个在线的标志预览页。
+
+## 许可
+
+本仓库的标志与图形资源采用 **[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)** 协议授权，完整条款见 [`LICENSE`](LICENSE)。
+
+- ✅ 可以转发、转载，需**署名**并注明是否做过改动
+- ❌ 不得用于**商业目的**
+- ❌ 不得**修改后发布**（改色、改形、加字后的版本同样受此限制）
+
+引用时建议使用：
+
+> Logo © NCWU-AstroGeo, licensed under CC BY-NC-ND 4.0
+
+**「AstroGeo」名称与学校校名不在本协议授权范围内**，本协议不授予任何商标或名称使用权。如需商用或使用改版标志，请联系团队获取许可。

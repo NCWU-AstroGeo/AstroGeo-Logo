@@ -1,0 +1,87 @@
+AstroGeo — Visual Identity Assets
+Copyright (c) 2026 NCWU-AstroGeo
+North China University of Water Resources and Electric Power
+
+=======================================================================
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+    License     CC BY-NC-ND 4.0
+    Summary     https://creativecommons.org/licenses/by-nc-nd/4.0/
+    Legal code  https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+You are free to:
+
+  Share — copy and redistribute the material in any medium or format.
+
+  The licensor cannot revoke these freedoms as long as you follow the
+  license terms.
+
+Under the following terms:
+
+  Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor
+    endorses you or your use.
+
+  NonCommercial — You may not use the material for commercial purposes.
+
+  NoDerivatives — If you remix, transform, or build upon the material,
+    you may not distribute the modified material.
+
+  No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing
+    anything the license permits.
+
+Notices:
+
+  You do not have to comply with the license for elements of the material
+  in the public domain or where your use is permitted by an applicable
+  exception or limitation.
+
+  No warranties are given. The license may not give you all of the
+  permissions necessary for your intended use. For example, other rights
+  such as publicity, privacy, or moral rights may limit how you use the
+  material.
+
+  The above is a summary of the license, not a substitute for it. The
+  binding terms are the full legal code linked above.
+
+=======================================================================
+
+Scope
+-----------------------------------------------------------------------
+
+This license covers the visual identity assets in this repository — the
+AstroGeo logo and its variants, lockups, icons and preview images, i.e.
+everything under:
+
+    01-mark/   02-mono/   03-favicon/
+    04-lockup/ 05-social-preview/ 06-alternates/
+
+The build scripts under tools/ exist for convenience only and are not
+part of the licensed visual identity. You may use and adapt them freely
+within this repository.
+
+Trademarks
+-----------------------------------------------------------------------
+
+The names "AstroGeo" and "North China University of Water Resources and
+Electric Power", and any associated logos or trade names, are NOT
+licensed under CC BY-NC-ND 4.0. This license grants no trademark,
+service mark or naming rights of any kind.
+
+Attribution format
+-----------------------------------------------------------------------
+
+When reusing these assets, a suitable credit line is:
+
+    Logo © NCWU-AstroGeo, licensed under CC BY-NC-ND 4.0
+
+Further permissions
+-----------------------------------------------------------------------
+
+For uses outside the scope of this license — commercial use, or a
+modified version of the mark — please contact the AstroGeo research
+group to request permission.
