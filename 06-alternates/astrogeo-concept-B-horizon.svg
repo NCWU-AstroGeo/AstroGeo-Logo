@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="AstroGeo - Horizon">
+  <title>AstroGeo - 星野地平线</title>
+  <defs>
+    <radialGradient id="bBg" cx="50%" cy="20%" r="88%">
+      <stop offset="0%" stop-color="#0F2C55"/>
+      <stop offset="100%" stop-color="#040A14"/>
+    </radialGradient>
+    <linearGradient id="bSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071730"/>
+      <stop offset="62%" stop-color="#123F73"/>
+      <stop offset="100%" stop-color="#1B5A9B"/>
+    </linearGradient>
+    <linearGradient id="bGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7FE3EE" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#2FC8DB" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="bDisc">
+      <circle cx="256" cy="256" r="182"/>
+    </clipPath>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bBg)"/>
+  <circle cx="256" cy="256" r="182" fill="url(#bSky)"/>
+
+  <g clip-path="url(#bDisc)">
+    <!-- night sky -->
+    <g fill="#DCEBFF">
+      <circle cx="118" cy="140" r="3" opacity="0.75"/>
+      <circle cx="330" cy="104" r="2.6" opacity="0.55"/>
+      <circle cx="396" cy="196" r="2.2" opacity="0.45"/>
+      <circle cx="170" cy="204" r="2.2" opacity="0.42"/>
+      <circle cx="268" cy="76" r="2" opacity="0.4"/>
+      <circle cx="92" cy="230" r="2.4" opacity="0.45"/>
+      <circle cx="352" cy="246" r="2" opacity="0.35"/>
+    </g>
+
+    <!-- constellation -->
+    <g stroke="#7FE3EE" stroke-opacity="0.45" stroke-width="2.2" fill="none">
+      <path d="M 152 104 L 200 82 L 218 134 L 170 152 Z"/>
+      <path d="M 218 134 L 246 118"/>
+    </g>
+    <g fill="#EAF7FF">
+      <circle cx="152" cy="104" r="5"/>
+      <circle cx="200" cy="82" r="4"/>
+      <circle cx="218" cy="134" r="3.6"/>
+      <circle cx="170" cy="152" r="3.2"/>
+      <circle cx="246" cy="118" r="3"/>
+    </g>
+    <path d="M 356 132 Q 360 156 384 160 Q 360 164 356 188 Q 352 164 328 160 Q 352 156 356 132 Z" fill="#FFC24B"/>
+
+    <!-- horizon glow -->
+    <ellipse cx="256" cy="252" rx="260" ry="70" fill="url(#bGlow)" opacity="0.55"/>
+
+    <!-- water + strata layers -->
+    <path d="M 20 254 Q 256 214 492 254 L 492 470 L 20 470 Z" fill="#38D0E2"/>
+    <path d="M 20 298 q 56 -26 112 0 t 112 0 t 112 0 t 112 0 t 112 0 L 512 470 L 20 470 Z" fill="#1E7FB8"/>
+    <path d="M 20 342 q 56 -26 112 0 t 112 0 t 112 0 t 112 0 t 112 0 L 512 470 L 20 470 Z" fill="#14548C"/>
+    <path d="M 20 386 q 56 -26 112 0 t 112 0 t 112 0 t 112 0 t 112 0 L 512 470 L 20 470 Z" fill="#0A2A50"/>
+
+    <!-- bright horizon line -->
+    <path d="M 20 254 Q 256 214 492 254" fill="none" stroke="#EAF7FF" stroke-opacity="0.92" stroke-width="5"/>
+  </g>
+
+  <circle cx="256" cy="256" r="182" fill="none" stroke="#2FC8DB" stroke-opacity="0.55" stroke-width="4"/>
+</svg>

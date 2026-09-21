@@ -1,0 +1,12 @@
+{
+  "name": "astrogeo-logo-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "从矢量源重新导出 AstroGeo 标志的全部位图（PNG / WebP / ICO）",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "sharp": "^0.35.0"
+  }
+}

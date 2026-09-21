@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AstroGeo 团队 Logo 方案</title>
+<style>
+  :root{
+    --ink:#0d1b2e;
+    --ink-2:#42546e;
+    --ink-3:#7b8ba3;
+    --line:#e2e8f0;
+    --card:#ffffff;
+    --bg:#f6f8fc;
+    --cyan:#0d9fb5;
+    --gold:#c8861a;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font-family:"Segoe UI","PingFang SC","Microsoft YaHei",Inter,system-ui,-apple-system,sans-serif;
+    line-height:1.7;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:56px 32px 96px}
+  header.top{margin-bottom:48px}
+  .eyebrow{
+    display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--cyan);font-weight:600;margin-bottom:14px;
+  }
+  h1{font-size:34px;line-height:1.3;margin:0 0 14px;font-weight:700;letter-spacing:-.01em}
+  .sub{color:var(--ink-2);font-size:15.5px;max-width:70ch;margin:0}
+  .meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+  .chip{
+    font-size:12.5px;color:var(--ink-2);background:#fff;border:1px solid var(--line);
+    padding:5px 12px;border-radius:999px;
+  }
+
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:28px 30px 30px;margin-bottom:26px;
+    box-shadow:0 1px 2px rgba(13,27,46,.04),0 8px 24px -16px rgba(13,27,46,.18);
+  }
+  .card-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+  .tag{
+    font-size:11.5px;font-weight:700;letter-spacing:.08em;color:#fff;background:var(--ink);
+    padding:3px 9px;border-radius:6px;
+  }
+  .tag.alt{background:var(--cyan)}
+  .card h2{font-size:20px;margin:0;font-weight:650}
+  .card .en{font-size:12.5px;color:var(--ink-3);letter-spacing:.06em}
+  .desc{color:var(--ink-2);font-size:14.5px;margin:8px 0 22px}
+
+  .showcase{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:start}
+  @media(max-width:760px){.showcase{grid-template-columns:1fr}}
+
+  .hero{display:flex;flex-direction:column;align-items:center;gap:10px}
+  .hero img{width:220px;height:220px;border-radius:50%;display:block;
+    box-shadow:0 14px 34px -14px rgba(13,27,46,.45)}
+  .hero .cap{font-size:12px;color:var(--ink-3)}
+
+  .scales{display:flex;align-items:flex-end;gap:22px;flex-wrap:wrap;margin-bottom:20px}
+  .sc{display:flex;flex-direction:column;align-items:center;gap:8px}
+  .sc img{display:block;border-radius:50%}
+  .sc span{font-size:11px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+  .sc .s96{width:96px;height:96px}
+  .sc .s64{width:64px;height:64px}
+  .sc .s40{width:40px;height:40px}
+  .sc .s24{width:24px;height:24px}
+
+  .ctx-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.ctx-row{grid-template-columns:1fr}}
+  .ctx{border-radius:12px;padding:16px;display:flex;align-items:center;gap:14px;min-height:86px}
+  .ctx.light{background:#ffffff;border:1px solid var(--line)}
+  .ctx.dark{background:#0d1117;border:1px solid #1f2733}
+  .ctx img{width:56px;height:56px;border-radius:50%;flex:none}
+  .ctx .who{font-size:13px;font-weight:600}
+  .ctx.light .who{color:#0d1b2e}
+  .ctx.dark .who{color:#e6edf3}
+  .ctx .handle{font-size:12px;font-weight:400}
+  .ctx.light .handle{color:#7b8ba3}
+  .ctx.dark .handle{color:#8b949e}
+  .ctx .bio{font-size:11.5px;margin-top:2px}
+  .ctx.light .bio{color:#42546e}
+  .ctx.dark .bio{color:#8b949e}
+  .ctx .lbl{
+    position:relative;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-3);margin-bottom:6px;display:block
+  }
+
+  .lockup-box{background:#0d1117;border-radius:14px;padding:26px;display:flex;justify-content:center}
+  .lockup-box img{max-width:100%;height:auto}
+
+  .notes{display:grid;grid-template-columns:1fr 1fr;gap:10px 26px;margin-top:20px}
+  @media(max-width:760px){.notes{grid-template-columns:1fr}}
+  .note{font-size:13.5px;color:var(--ink-2);display:flex;gap:9px}
+  .note b{color:var(--ink);font-weight:600}
+  .dot{flex:none;width:6px;height:6px;border-radius:50%;background:var(--cyan);margin-top:9px}
+
+  .pal{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+  .sw{width:104px}
+  .sw .box{height:56px;border-radius:10px;border:1px solid rgba(13,27,46,.08)}
+  .sw .nm{font-size:11px;color:var(--ink-2);margin-top:6px;font-variant-numeric:tabular-nums}
+
+  footer{margin-top:52px;font-size:12.5px;color:var(--ink-3);border-top:1px solid var(--line);padding-top:20px}
+  code{background:#eef2f8;padding:1.5px 6px;border-radius:5px;font-size:12.5px;color:#1f4f7a}
+
+  table.manifest{width:100%;border-collapse:collapse;margin-top:6px}
+  table.manifest th{text-align:left;font-weight:600;color:var(--ink-3);font-size:11px;
+    letter-spacing:.09em;text-transform:uppercase;padding:0 14px 9px 0;border-bottom:1px solid var(--line)}
+  table.manifest td{padding:10px 14px 10px 0;border-bottom:1px solid #eef2f8;vertical-align:top;
+    color:var(--ink-2);font-size:13px}
+  table.manifest td:first-child{color:var(--ink);font-weight:600;white-space:nowrap;width:190px}
+  table.manifest td code{font-size:12px}
+  table.manifest tr:last-child td{border-bottom:none}
+
+  pre.tree{background:#f2f6fc;border:1px solid var(--line);border-radius:12px;
+    padding:20px 22px;margin:6px 0 22px;overflow-x:auto;
+    font-family:"Cascadia Mono",Consolas,"SF Mono",Menlo,monospace;
+    font-size:12.5px;line-height:1.9;color:#33455e;white-space:pre}
+  pre.tree b{color:var(--cyan);font-weight:600}
+  pre.tree i{color:var(--ink-3);font-style:normal}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">Logo Proposal</div>
+    <h1>AstroGeo 团队标志设计</h1>
+    <p class="sub">
+      华北水利水电大学（North China University of Water Resources and Electric Power）AstroGeo 科研团队。名称由 <b>Astro</b>（天体、星空、遥感观测）与 <b>Geo</b>（地球、地质、水文）组合而成，
+      四套方案均围绕「星—地」两条线索展开，兼顾 GitHub 头像的圆形裁切与小尺寸识别。
+    </p>
+    <div class="meta">
+      <span class="chip">矢量 SVG，任意缩放无损</span>
+      <span class="chip">1024 × 1024 PNG</span>
+      <span class="chip">WebP</span>
+      <span class="chip">favicon.ico 七尺寸</span>
+      <span class="chip">单色 / 反白版</span>
+      <span class="chip">横向组合标志</span>
+      <span class="chip">仓库社交预览图</span>
+      <span class="chip">已定稿 · AstroGeo-Logo/ 60 个文件</span>
+    </div>
+  </header>
+
+  <!-- A -->
+  <section class="card">
+    <div class="card-head">
+      <span class="tag">方案 A</span>
+      <span class="tag alt">定稿</span>
+      <h2>星轨地球</h2>
+      <span class="en">ORBIT GLOBE</span>
+    </div>
+    <p class="desc">球体经纬网代表地球与地质构造，倾斜星轨环绕穿过，轨道末端一颗金色星体作为视觉焦点；球体下部融入水波，呼应学校水利水电特色。识别度最高，缩到 24px 仍能看出「星球 + 轨道」。</p>
+    <div class="showcase">
+      <div class="hero">
+        <img src="01-mark/astrogeo-mark.svg" alt="方案A">
+        <span class="cap">主标志</span>
+      </div>
+      <div>
+        <div class="scales">
+          <div class="sc"><img class="s96" src="01-mark/astrogeo-mark.svg" alt=""><span>96px</span></div>
+          <div class="sc"><img class="s64" src="01-mark/astrogeo-mark.svg" alt=""><span>64px</span></div>
+          <div class="sc"><img class="s40" src="01-mark/astrogeo-mark.svg" alt=""><span>40px</span></div>
+          <div class="sc"><img class="s24" src="01-mark/astrogeo-mark.svg" alt=""><span>24px</span></div>
+        </div>
+        <div class="ctx-row">
+          <div class="ctx light">
+            <img src="01-mark/astrogeo-mark.svg" alt="">
+            <div>
+              <div class="who">AstroGeo <span class="handle">· 浅色界面</span></div>
+              <div class="bio">North China University of Water Resources and Electric Power</div>
+            </div>
+          </div>
+          <div class="ctx dark">
+            <img src="01-mark/astrogeo-mark.svg" alt="">
+            <div>
+              <div class="who">AstroGeo <span class="handle">· 深色界面</span></div>
+              <div class="bio">Research Group · 遥感 / 地球科学</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pal">
+      <div class="sw"><div class="box" style="background:#040A14"></div><div class="nm">#040A14</div></div>
+      <div class="sw"><div class="box" style="background:#123A6B"></div><div class="nm">#123A6B</div></div>
+      <div class="sw"><div class="box" style="background:#2FC8DB"></div><div class="nm">#2FC8DB</div></div>
+      <div class="sw"><div class="box" style="background:#7FE3EE"></div><div class="nm">#7FE3EE</div></div>
+      <div class="sw"><div class="box" style="background:#FFC24B"></div><div class="nm">#FFC24B</div></div>
+    </div>
+  </section>
+
+  <!-- B -->
+  <section class="card">
+    <div class="card-head">
+      <span class="tag">方案 B</span>
+      <h2>星野 · 地层水波</h2>
+      <span class="en">HORIZON</span>
+    </div>
+    <p class="desc">上半部为星座星野，下半部由四层渐深的水波／地层带构成，中间一条明亮地平线分隔天地。叙事性最强，直接对应「天文 + 地质水文」的研究方向。</p>
+    <div class="showcase">
+      <div class="hero">
+        <img src="06-alternates/astrogeo-concept-B-horizon.svg" alt="方案B">
+        <span class="cap">主标志</span>
+      </div>
+      <div>
+        <div class="scales">
+          <div class="sc"><img class="s96" src="06-alternates/astrogeo-concept-B-horizon.svg" alt=""><span>96px</span></div>
+          <div class="sc"><img class="s64" src="06-alternates/astrogeo-concept-B-horizon.svg" alt=""><span>64px</span></div>
+          <div class="sc"><img class="s40" src="06-alternates/astrogeo-concept-B-horizon.svg" alt=""><span>40px</span></div>
+          <div class="sc"><img class="s24" src="06-alternates/astrogeo-concept-B-horizon.svg" alt=""><span>24px</span></div>
+        </div>
+        <div class="ctx-row">
+          <div class="ctx light">
+            <img src="06-alternates/astrogeo-concept-B-horizon.svg" alt="">
+            <div>
+              <div class="who">AstroGeo <span class="handle">· 浅色界面</span></div>
+              <div class="bio">North China University of Water Resources and Electric Power</div>
+            </div>
+          </div>
+          <div class="ctx dark">
+            <img src="06-alternates/astrogeo-concept-B-horizon.svg" alt="">
+            <div>
+              <div class="who">AstroGeo <span class="handle">· 深色界面</span></div>
+              <div class="bio">Research Group · 遥感 / 地球科学</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pal">
+      <div class="sw"><div class="box" style="background:#071730"></div><div class="nm">#071730</div></div>
+      <div class="sw"><div class="box" style="background:#38D0E2"></div><div class="nm">#38D0E2</div></div>
+      <div class="sw"><div class="box" style="background:#1E7FB8"></div><div class="nm">#1E7FB8</div></div>
+      <div class="sw"><div class="box" style="background:#14548C"></div><div class="nm">#14548C</div></div>
+      <div class="sw"><div class="box" style="background:#FFC24B"></div><div class="nm">#FFC24B</div></div>
+    </div>
+  </section>
+
+  <!-- C -->
+  <section class="card">
+    <div class="card-head">
+      <span class="tag">方案 C</span>
+      <h2>字母 A 单色标</h2>
+      <span class="en">MONOGRAM</span>
+    </div>
+    <p class="desc">以几何字母 A 为主形，顶点嵌一颗金色星，字腔（三角内部）留作星野，横画处理成一道轨道弧。结构最简洁、最接近成熟科研团队的标识语言，单色印刷、论文页眉、代码水印都能用。</p>
+    <div class="showcase">
+      <div class="hero">
+        <img src="06-alternates/astrogeo-concept-C-monogram.svg" alt="方案C">
+        <span class="cap">主标志</span>
+      </div>
+      <div>
+        <div class="scales">
+          <div class="sc"><img class="s96" src="06-alternates/astrogeo-concept-C-monogram.svg" alt=""><span>96px</span></div>
+          <div class="sc"><img class="s64" src="06-alternates/astrogeo-concept-C-monogram.svg" alt=""><span>64px</span></div>
+          <div class="sc"><img class="s40" src="06-alternates/astrogeo-concept-C-monogram.svg" alt=""><span>40px</span></div>
+          <div class="sc"><img class="s24" src="06-alternates/astrogeo-concept-C-monogram.svg" alt=""><span>24px</span></div>
+        </div>
+        <div class="ctx-row">
+          <div class="ctx light">
+            <img src="06-alternates/astrogeo-concept-C-monogram.svg" alt="">
+            <div>
+              <div class="who">AstroGeo <span class="handle">· 浅色界面</span></div>
+              <div class="bio">North China University of Water Resources and Electric Power</div>
+            </div>
+          </div>
+          <div class="ctx dark">
+            <img src="06-alternates/astrogeo-concept-C-monogram.svg" alt="">
+            <div>
+              <div class="who">AstroGeo <span class="handle">· 深色界面</span></div>
+              <div class="bio">Research Group · 遥感 / 地球科学</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pal">
+      <div class="sw"><div class="box" style="background:#040A14"></div><div class="nm">#040A14</div></div>
+      <div class="sw"><div class="box" style="background:#F2F7FF"></div><div class="nm">#F2F7FF</div></div>
+      <div class="sw"><div class="box" style="background:#2FC8DB"></div><div class="nm">#2FC8DB</div></div>
+      <div class="sw"><div class="box" style="background:#9FE8F3"></div><div class="nm">#9FE8F3</div></div>
+      <div class="sw"><div class="box" style="background:#FFC24B"></div><div class="nm">#FFC24B</div></div>
+    </div>
+  </section>
+
+  <!-- D -->
+  <section class="card">
+    <div class="card-head">
+      <span class="tag">方案 D</span>
+      <h2>星环 A（A + C 融合）</h2>
+      <span class="en">ASTRAL A</span>
+    </div>
+    <p class="desc">在方案 C 的字母 A 基础上，把横画换成一道横贯全字的轨道环——环从 A 的两条腿中间穿过，形成「行星被星环贯穿」的结构。既有 A 的简洁骨架，又保留了 A 方案的星球意象，是四套里最有辨识度也最"重"的一版。</p>
+    <div class="showcase">
+      <div class="hero">
+        <img src="06-alternates/astrogeo-concept-D-astral-a.svg" alt="方案D">
+        <span class="cap">主标志</span>
+      </div>
+      <div>
+        <div class="scales">
+          <div class="sc"><img class="s96" src="06-alternates/astrogeo-concept-D-astral-a.svg" alt=""><span>96px</span></div>
+          <div class="sc"><img class="s64" src="06-alternates/astrogeo-concept-D-astral-a.svg" alt=""><span>64px</span></div>
+          <div class="sc"><img class="s40" src="06-alternates/astrogeo-concept-D-astral-a.svg" alt=""><span>40px</span></div>
+          <div class="sc"><img class="s24" src="06-alternates/astrogeo-concept-D-astral-a.svg" alt=""><span>24px</span></div>
+        </div>
+        <div class="ctx-row">
+          <div class="ctx light">
+            <img src="06-alternates/astrogeo-concept-D-astral-a.svg" alt="">
+            <div>
+              <div class="who">AstroGeo <span class="handle">· 浅色界面</span></div>
+              <div class="bio">North China University of Water Resources and Electric Power</div>
+            </div>
+          </div>
+          <div class="ctx dark">
+            <img src="06-alternates/astrogeo-concept-D-astral-a.svg" alt="">
+            <div>
+              <div class="who">AstroGeo <span class="handle">· 深色界面</span></div>
+              <div class="bio">Research Group · 遥感 / 地球科学</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- lockup -->
+  <section class="card">
+    <div class="card-head">
+      <span class="tag alt">配套</span>
+      <h2>横向组合标志</h2>
+      <span class="en">LOCKUP · 1400 × 460</span>
+    </div>
+    <p class="desc">用于 README 页头、组会 PPT 封面、论文致谢页。以方案 A 为主体，右侧为标准字与学校英文全名 <code>NORTH CHINA UNIVERSITY OF WATER RESOURCES AND ELECTRIC POWER</code>。已烘入深色底，白底页面直接可用。</p>
+    <p class="desc" style="margin-top:-8px"><b>图标 288 → 380px，标准字 108 → 160px</b>，画布同步从 1280×400 放大到 1400×460，避免放大后顶边。</p>
+    <div class="lockup-box"><img src="04-lockup/astrogeo-lockup.svg" alt="横向组合标志"></div>
+  </section>
+
+  <!-- social preview -->
+  <section class="card">
+    <div class="card-head">
+      <span class="tag alt">配套</span>
+      <h2>仓库社交预览图</h2>
+      <span class="en">SOCIAL PREVIEW · 1280 × 640</span>
+    </div>
+    <p class="desc">GitHub 仓库 Settings → Social preview 上传此图，链接分享到微信／Twitter／Slack 时显示的封面。星空 + 星座 + 底部水波，与头像同一套视觉语言。<b>图标 260 → 350px，标准字 110 → 146px</b>，地平线相应下移让出空间。</p>
+    <div class="lockup-box"><img src="05-social-preview/astrogeo-social-preview.svg" alt="社交预览图"></div>
+  </section>
+
+  <!-- mono + square -->
+  <section class="card">
+    <div class="card-head">
+      <span class="tag alt">配套</span>
+      <h2>单色版与方形圆角版</h2>
+      <span class="en">MONO · ROUNDED SQUARE</span>
+    </div>
+    <p class="desc">单色版用于印刷、论文页眉、印章、水印；方形圆角版用于 PPT、Notion、Slack 等不接受圆形裁切的场合。</p>
+    <div class="ctx-row" style="grid-template-columns:1fr 1fr 1fr">
+      <div class="ctx dark" style="flex-direction:column;gap:12px;padding:22px">
+        <span class="lbl" style="color:#8b949e">单色反白 · 深色底</span>
+        <img src="02-mono/astrogeo-mark-mono-light.svg" alt="" style="width:150px;height:150px;border-radius:0">
+      </div>
+      <div class="ctx light" style="flex-direction:column;gap:12px;padding:22px">
+        <span class="lbl" style="color:#7b8ba3">单色深版 · 浅色底</span>
+        <img src="02-mono/astrogeo-mark-mono-dark.svg" alt="" style="width:150px;height:150px;border-radius:0">
+      </div>
+      <div class="ctx dark" style="flex-direction:column;gap:12px;padding:22px">
+        <span class="lbl" style="color:#8b949e">方形圆角版</span>
+        <img src="01-mark/astrogeo-mark-rounded.svg" alt="" style="width:150px;height:150px;border-radius:0">
+      </div>
+    </div>
+  </section>
+
+  <!-- favicon -->
+  <section class="card">
+    <div class="card-head">
+      <span class="tag alt">配套</span>
+      <h2>图标尺寸阶梯</h2>
+      <span class="en">FAVICON · 16 → 256px</span>
+    </div>
+    <p class="desc">网站 favicon、GitHub Pages、桌面快捷方式用。这里做了一处关键处理：<b>16 / 24 / 32px 换成简化版</b>——去掉经纬网格和一层水波，把球体、轨道、金星加粗放大。原版细节图在这个尺寸下会糊成一团蓝斑，简化版才能保住「球 + 环 + 金星」三个特征点。48px 以上仍用完整细节版。</p>
+    <div class="scales">
+      <div class="sc"><img src="03-favicon/favicon-256.png" style="width:96px;height:96px;border-radius:50%" alt=""><span>256px</span></div>
+      <div class="sc"><img src="03-favicon/favicon-48.png" style="width:48px;height:48px;border-radius:50%" alt=""><span>48px</span></div>
+      <div class="sc"><img src="03-favicon/favicon-32.png" style="width:32px;height:32px;border-radius:50%" alt=""><span>32px · 简化</span></div>
+      <div class="sc"><img src="03-favicon/favicon-24.png" style="width:24px;height:24px;border-radius:50%" alt=""><span>24px · 简化</span></div>
+      <div class="sc"><img src="03-favicon/favicon-16.png" style="width:16px;height:16px;border-radius:50%" alt=""><span>16px · 简化</span></div>
+    </div>
+    <div class="lockup-box" style="background:#fff;border:1px solid var(--line);margin-top:6px">
+      <img src="03-favicon/size-comparison.png" alt="小尺寸对比" style="max-width:100%">
+    </div>
+    <p class="desc" style="margin:14px 0 0;font-size:13px">上排＝原版细节图，下排＝简化版，列依次为 16 / 24 / 32px 的原始像素放大。16px 一档差距最明显。</p>
+  </section>
+
+  <!-- manifest -->
+  <section class="card">
+    <div class="card-head">
+      <span class="tag alt">定稿</span>
+      <h2>目录结构</h2>
+      <span class="en">AstroGeo-Logo/ · 60 FILES</span>
+    </div>
+    <p class="desc">已定稿方案 A（星轨地球）。全部标志按用途分成 6 个文件夹，每个文件夹自带矢量源文件与位图导出，可以单独拷走使用。</p>
+<pre class="tree">AstroGeo-Logo/
+├── index.html                      <i>预览页（本页）</i>
+├── <b>01-mark/</b>                       主标志 · 定稿方案 A 星轨地球
+│   ├── astrogeo-mark.svg          矢量源（可无损改色改字）
+│   ├── astrogeo-mark-1024.png     <i>← GitHub 团队头像用这个</i>
+│   ├── astrogeo-mark-{512,256,128,64,32}.png
+│   ├── astrogeo-mark.webp         无损
+│   ├── astrogeo-mark-rounded.svg  方形圆角版
+│   └── astrogeo-mark-rounded-{1024…32}.png / .webp
+├── <b>02-mono/</b>                       单色版
+│   ├── astrogeo-mark-mono-light.svg / -1024…32.png / .webp   <i>反白，深色底用</i>
+│   ├── astrogeo-mark-mono-dark.svg  / -1024…32.png / .webp   <i>深蓝，浅色底与印刷用</i>
+│   └── on-background-preview.png  两种底色的实际效果预览
+├── <b>03-favicon/</b>                    图标 · 网站与桌面
+│   ├── favicon.ico                内含 16/24/32/48/64/128/256 七个尺寸
+│   ├── favicon-{16,24,32,48,192,256,512}.png
+│   ├── astrogeo-mark-simple.svg   小尺寸简化版源文件（16-32px 用）
+│   └── size-comparison.png        原版 vs 简化版 在 16/24/32px 的对比
+├── <b>04-lockup/</b>                     横向组合标志
+│   ├── astrogeo-lockup.svg
+│   ├── astrogeo-lockup-2000.png   <i>← README 页头用这个</i>
+│   ├── astrogeo-lockup-1000.png
+│   └── astrogeo-lockup.webp
+├── <b>05-social-preview/</b>             仓库社交预览图
+│   ├── astrogeo-social-preview.svg
+│   ├── astrogeo-social-preview-1280x640.png   <i>← GitHub Social preview 用这个</i>
+│   └── astrogeo-social-preview.webp
+└── <b>06-alternates/</b>                 备选方案（未采用，留档）
+    ├── astrogeo-concept-B-horizon.svg   / -1024.png / -512.png
+    ├── astrogeo-concept-C-monogram.svg  / -1024.png / -512.png
+    └── astrogeo-concept-D-astral-a.svg  / -1024.png / -512.png</pre>
+    <table class="manifest">
+      <thead><tr><th>放到哪里</th><th>用哪个文件</th></tr></thead>
+      <tbody>
+        <tr><td>GitHub 团队头像</td><td><code>01-mark/astrogeo-mark-1024.png</code></td></tr>
+        <tr><td>仓库 Social preview</td><td><code>05-social-preview/astrogeo-social-preview-1280x640.png</code></td></tr>
+        <tr><td>README 页头</td><td><code>04-lockup/astrogeo-lockup-2000.png</code></td></tr>
+        <tr><td>网站 favicon</td><td><code>03-favicon/favicon.ico</code></td></tr>
+        <tr><td>论文 / 印刷</td><td><code>02-mono/astrogeo-mark-mono-dark.svg</code></td></tr>
+        <tr><td>印章 / 深色底水印</td><td><code>02-mono/astrogeo-mark-mono-light.svg</code></td></tr>
+        <tr><td>PPT / Notion / Slack</td><td><code>01-mark/astrogeo-mark-rounded-1024.png</code></td></tr>
+        <tr><td>要改配色或字形</td><td>改 <code>.svg</code> 源文件，矢量无损</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- notes -->
+  <section class="card">
+    <div class="card-head"><h2 style="font-size:17px">设计说明</h2></div>
+    <div class="notes">
+      <div class="note"><span class="dot"></span><span><b>命名拆解</b> — Astro 对应星空、天体测量、卫星遥感；Geo 对应地球、地质、水文与地下水。三套方案都在同一处收口：一个圆／一个地平线。</span></div>
+      <div class="note"><span class="dot"></span><span><b>圆形安全区</b> — GitHub 会把头像裁成圆形，所有元素都控制在中心内切圆内，不会被切掉。</span></div>
+      <div class="note"><span class="dot"></span><span><b>小尺寸验证</b> — 已在 16 / 24 / 40 / 64 / 96px 下核对。方案 A、C、D 在 24px 仍可辨识；方案 B 在 24px 主要呈现「上暗下亮」的层次。</span></div>
+      <div class="note"><span class="dot"></span><span><b>用色</b> — 深空蓝为主色，青蓝为科技色，金色仅用于星体单点提亮，避免配色发散。</span></div>
+      <div class="note"><span class="dot"></span><span><b>可交付格式</b> — 已定稿方案 A。矢量 <code>.svg</code>（可无损改色、改字）、多尺寸 <code>.png</code>、无损 <code>.webp</code>、七尺寸 <code>favicon.ico</code>，以及单色反白版、方形圆角版与社交预览图，全部收在 <code>dist/</code>。</span></div>
+      <div class="note"><span class="dot"></span><span><b>署名文字</b> — 组合标志与预览图使用学校英文全名 <code>North China University of Water Resources and Electric Power</code>（58 字符），单行大写排布，已按该长度重新排版以免溢出。</span></div>
+    </div>
+  </section>
+
+  <footer>
+    AstroGeo · 华北水利水电大学科研团队 / North China University of Water Resources and Electric Power — Logo 提案 · 全部图形为矢量绘制，可继续调整配色、字形与细节。
+  </footer>
+</div>
+</body>
+</html>

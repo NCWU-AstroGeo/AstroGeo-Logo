@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="AstroGeo - small size mark">
+  <title>AstroGeo 小尺寸简化版（16 / 24 / 32px 用）</title>
+  <defs>
+    <radialGradient id="fBg" cx="50%" cy="28%" r="82%">
+      <stop offset="0%" stop-color="#163E73"/>
+      <stop offset="55%" stop-color="#0A1E3C"/>
+      <stop offset="100%" stop-color="#040A14"/>
+    </radialGradient>
+    <radialGradient id="fGlobe" cx="34%" cy="26%" r="82%">
+      <stop offset="0%" stop-color="#3A86D6"/>
+      <stop offset="55%" stop-color="#123A6B"/>
+      <stop offset="100%" stop-color="#061529"/>
+    </radialGradient>
+    <clipPath id="fClip"><circle cx="256" cy="266" r="140"/></clipPath>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#fBg)"/>
+
+  <!-- globe: bigger, no meridian grid -->
+  <circle cx="256" cy="266" r="140" fill="url(#fGlobe)"/>
+  <g clip-path="url(#fClip)">
+    <line x1="116" y1="266" x2="396" y2="266" stroke="#8FE9F5" stroke-opacity="0.45" stroke-width="11"/>
+    <path d="M 96 330 q 30 -18 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0" fill="none" stroke="#4FD8E8" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 96 374 q 30 18 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0" fill="none" stroke="#2E9BC8" stroke-width="18" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  <circle cx="256" cy="266" r="140" fill="none" stroke="#8FE9F5" stroke-width="18"/>
+
+  <!-- orbit: bolder -->
+  <g transform="rotate(-28 256 266)">
+    <ellipse cx="256" cy="266" rx="200" ry="66" fill="none" stroke="#2FC8DB" stroke-width="20"/>
+    <circle cx="56" cy="266" r="18" fill="#EAF7FF"/>
+  </g>
+
+  <!-- star: bigger -->
+  <path d="M 432 126 Q 438.4 165.6 478 172 Q 438.4 178.4 432 218 Q 425.6 178.4 386 172 Q 425.6 165.6 432 126 Z" fill="#FFC24B"/>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="AstroGeo - Orbit Globe">
+  <title>AstroGeo - 星轨地球</title>
+  <defs>
+    <radialGradient id="aBg" cx="50%" cy="28%" r="82%">
+      <stop offset="0%" stop-color="#163E73"/>
+      <stop offset="52%" stop-color="#0A1E3C"/>
+      <stop offset="100%" stop-color="#040A14"/>
+    </radialGradient>
+    <radialGradient id="aHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2FC8DB" stop-opacity="0.30"/>
+      <stop offset="65%" stop-color="#2FC8DB" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#2FC8DB" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aGlobe" cx="34%" cy="26%" r="82%">
+      <stop offset="0%" stop-color="#2E76C4"/>
+      <stop offset="55%" stop-color="#123A6B"/>
+      <stop offset="100%" stop-color="#061529"/>
+    </radialGradient>
+    <linearGradient id="aWave" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5FE0EF" stop-opacity="0.90"/>
+      <stop offset="100%" stop-color="#1B4F8F" stop-opacity="0.05"/>
+    </linearGradient>
+    <clipPath id="aClipGlobe">
+      <circle cx="256" cy="266" r="130"/>
+    </clipPath>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#aBg)"/>
+  <circle cx="256" cy="266" r="206" fill="url(#aHalo)"/>
+
+  <!-- outer badge ring -->
+  <circle cx="256" cy="256" r="198" fill="none" stroke="#2FC8DB" stroke-opacity="0.15" stroke-width="3"/>
+
+  <!-- star field -->
+  <g fill="#DCEBFF">
+    <circle cx="92" cy="116" r="3.2" opacity="0.72"/>
+    <circle cx="404" cy="128" r="2.4" opacity="0.50"/>
+    <circle cx="118" cy="396" r="2.6" opacity="0.48"/>
+    <circle cx="396" cy="382" r="3.0" opacity="0.58"/>
+    <circle cx="204" cy="66" r="2.2" opacity="0.42"/>
+    <circle cx="336" cy="444" r="2.2" opacity="0.38"/>
+  </g>
+
+  <!-- globe -->
+  <circle cx="256" cy="266" r="130" fill="url(#aGlobe)"/>
+  <g clip-path="url(#aClipGlobe)">
+    <g fill="none" stroke="#7FE3EE" stroke-opacity="0.38" stroke-width="3">
+      <line x1="126" y1="266" x2="386" y2="266"/>
+      <ellipse cx="256" cy="266" rx="130" ry="46"/>
+      <ellipse cx="256" cy="266" rx="130" ry="94"/>
+      <ellipse cx="256" cy="266" rx="46" ry="130"/>
+      <ellipse cx="256" cy="266" rx="94" ry="130"/>
+    </g>
+    <path d="M 96 336 q 26 -13 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 L 424 440 L 96 440 Z" fill="url(#aWave)"/>
+    <path d="M 96 362 q 26 13 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 L 424 444 L 96 444 Z" fill="#1E6FA8" fill-opacity="0.62"/>
+    <path d="M 96 386 q 26 -11 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 L 424 448 L 96 448 Z" fill="#0C3A66" fill-opacity="0.7"/>
+  </g>
+  <circle cx="256" cy="266" r="130" fill="none" stroke="#8FE9F5" stroke-opacity="0.70" stroke-width="4"/>
+
+  <!-- orbit -->
+  <g transform="rotate(-28 256 266)">
+    <ellipse cx="256" cy="266" rx="196" ry="62" fill="none" stroke="#2FC8DB" stroke-width="6" stroke-opacity="0.92"/>
+    <circle cx="83" cy="266" r="10" fill="#EAF7FF"/>
+  </g>
+
+  <!-- gold star on the orbit -->
+  <path d="M 429 144 Q 434.4 168.6 459 174 Q 434.4 179.4 429 204 Q 423.6 179.4 399 174 Q 423.6 168.6 429 144 Z"
+        fill="#FFC24B"/>
+</svg>

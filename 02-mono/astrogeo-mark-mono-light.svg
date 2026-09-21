@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="AstroGeo mono light">
+  <title>AstroGeo 单色反白版（用于深色底）</title>
+  <defs>
+    <clipPath id="mClip"><circle cx="256" cy="266" r="130"/></clipPath>
+  </defs>
+  <g fill="none" stroke="#FFFFFF">
+    <circle cx="256" cy="256" r="198" stroke-opacity="0.28" stroke-width="3"/>
+    <circle cx="256" cy="266" r="130" stroke-width="12"/>
+    <g stroke-opacity="0.5" stroke-width="5">
+      <line x1="126" y1="266" x2="386" y2="266"/>
+      <ellipse cx="256" cy="266" rx="130" ry="46"/>
+      <ellipse cx="256" cy="266" rx="130" ry="94"/>
+      <ellipse cx="256" cy="266" rx="46" ry="130"/>
+      <ellipse cx="256" cy="266" rx="94" ry="130"/>
+    </g>
+    <g transform="rotate(-28 256 266)">
+      <ellipse cx="256" cy="266" rx="196" ry="62" stroke-width="11"/>
+      <circle cx="83" cy="266" r="11" fill="#FFFFFF" stroke="none"/>
+    </g>
+  </g>
+  <g clip-path="url(#mClip)" fill="none" stroke="#FFFFFF" stroke-linecap="round">
+    <path d="M 96 338 q 26 -13 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0" stroke-width="9"/>
+    <path d="M 96 374 q 26 13 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0" stroke-width="7" stroke-opacity="0.5"/>
+  </g>
+  <path d="M 429 144 Q 434.4 168.6 459 174 Q 434.4 179.4 429 204 Q 423.6 179.4 399 174 Q 423.6 168.6 429 144 Z" fill="#FFFFFF"/>
+</svg>
